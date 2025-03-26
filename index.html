@@ -1,0 +1,306 @@
+        <!DOCTYPE html>
+        <html lang="es">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-compatible" content="ie=edge">
+            <title> TRANSPORTES ATH SAS </title>
+            <link rel="stylesheet" href="css/estilos.css">
+            <link rel="shortcut icon" href="img/icon.1.png" type="image/x-icon">
+            <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+            <style>
+                header nav {    
+                    position: fixed; 
+                    top: 0;          
+                    left: 0;
+                    width: 100%;     
+                    background-color: #3adf11; 
+                    z-index: 1000;   
+                    padding: 10px 0; 
+                }
+
+                body {
+                    padding-top: 60px;
+                }
+
+                html {
+                    scroll-behavior: smooth;
+                }
+
+                @keyframes fadeIn{
+                    0% { opacity: 0;}
+                    100% { opacity: 1;}
+                }
+
+                .fade-in{
+                    animation: fadeIn 1s ease-in-out;
+                }
+            </style>
+
+        </head>
+        <body id="inicio">
+            <header>
+                <nav>
+                    <a href="#inicio">inicio</a>
+                    <a href="#Nosotros">Nosotros</a>
+                    <a href="#Portafolio">Portafolio</a>    
+                    <a href="#empresa">Empresa</a>
+                    <a href="#contacto-footer">Contacto </a>
+                    <a href="https://wa.me/+573214820877" target="_blank" class="whatsapp-icon">
+                        <img src="img/whatsapp.1.png" alt="whatsapp"></a>
+                    <div class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn" id="dropdown-toggle">Pagos en linea</a>
+                        <div class="dropdown-content" id="dropdown-menu">
+                            <a href="https://portalpagos.davivienda.com/#/comercio/8545/TRANSPORTES%20ATH%20SAS" target="_blank">
+                            <div class="recuadro" id="recuadro1">
+                                Pagos en linea
+                            </div> 
+                            </a>
+                            <a href="file:///C:/Users/Cristian/Downloads/INSTRUCTIVO%20DE%20PAGO%20ATH.pdf" target="_blank">  
+                            <div class="recuadro" id="recuadro2">
+                                Instructivo de pago
+                            </div>
+                        </a> 
+                        </div>
+                    </div>
+                </nav>
+            </header>                   
+                </nav>
+                <section class="textos-header">    
+                    <div class="wave-container"> 
+                    <h1>TRANSPORTES ATH SAS</h1>
+                    </div>
+                </section>
+                <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                    <path d="M-0.27,61.69 C149.99,150.00 435.94,-69.55 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: rgb(68, 218, 38);"></path></svg></div>
+            </header>
+            <main> 
+                <section class="contenedor sobre-nosotros" id="empresa">
+                    <h2 class="titulo">Empresa</h2>
+                    <div class="contenedor-sobre-nosotros">
+                        <img src="img/ath.1.png " alt="" class="imagen-about-us">
+                        <div class="contenido-textos">
+                            <div class="servicios-cuadro">
+                                <h3><span>1</span>Los mejores Servicios</h3>
+                                <p>Somos una empresa colombiana de servicio público, enfocada en el transporte automotor
+                                    especial, legalmente constituida y habilitada para la prestación de servicio especial de
+                                    pasajeros, por el Ministerio de Transporte - Dirección Territorial de Cundinamarca,
+                                    mediante Resolución Nº. 003745 del 24 de agosto del año 2001; certificada en gestión
+                                    de calidad ISO 9001:2015 e ISO 45001:2018. Gracias a ello, desde hace más de una
+                                    década, venimos prestando nuestros servicios en el ámbito escolar, empresarial,
+                                    turístico, médico y ocasional o expresos en la capital y a nivel nacional.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <main>    
+                    <section class="Portafolio" id="Portafolio">    
+                        <div class="contenedor">
+                            <h2 class="titulo">Portafolio</h2>
+                            <div class="galeria-port">
+                                <div class="imagen-port" onclick="mostrarModal('modal1')">
+                                    <img src="img/microbus.0.png">
+                                    <div class="hover-galeria">
+                                        <p>Microbus</p>   
+                                    </div>
+                                </div>
+                                <div class="imagen-port" onclick="mostrarModal('modal2')">
+                                    <img src="img/buseta.1.jpg">
+                                    <div class="hover-galeria">
+                                        <p>Buseta</p>      
+                                    </div>
+                                </div>
+                                <div class="imagen-port" onclick="mostrarModal('modal3')">
+                                    <img src="img/bus.5.jpg">
+                                    <div class="hover-galeria">
+                                        <p>Bus</p>   
+                                    </div>
+                                </div>                           
+                            </div>   
+                        </div>
+                    </section>
+            
+                    <div id="modal1" class="modal">
+                        <div class="modal-content">
+                            <span class="close" onclick="cerrarModal('modal1')">&times;</span>
+                            <h3>Galeria de microbus</h3>
+                            <div class="imagenes-modal">
+                                <img src="img/microbus.1.jpg" alt="">
+                                <img src="img/microbus.3.jpg" alt="">
+                                <img src="img/microbus.5.jpg" alt="">
+                                <img src="img/microbus.6.jpg" alt="">
+                                <img src="img/microbus.7.jpg" alt="">
+                                <img src="img/microbus.8.jpg" alt="">
+                            </div>
+                            <span class="arrow arrow-left" onclick="cambiar-Imagen('modal1', -1)">&#8592;</span>
+                            <span class="arrow arrow-right" onclick="cambiar-Imagen('modal2', 1)">&#8592;</span>
+                        </div>
+                    </div>
+                    
+                    <div id="modal2" class="modal">
+                        <div class="modal-content">
+                            <span class="close" onclick="cerrarModal('modal2')">&times;</span>
+                            <h3>Galeria De Buseta</h3>
+                            <div class="imagenes-modal">
+                                <img src="img/buseta.1.jpg" alt="">
+                                <img src="img/buseta.2.jpg" alt="">
+                                <img src="img/buseta.3.jpg" alt="">
+                                <img src="img/buseta.4.jpg" alt="">
+                                <img src="img/buseta.5.jpg" alt="">
+                                <img src="img/buseta.6.jpg" alt="">
+                            </div>
+                            <span class="arrow arrow-left" onclick="cambiarImagen('modal2', -1)">&#8592;</span>
+                            <span class="arrow arrow-right" onclick="cambiarImagen('modal2',1)">&#8592;</span>
+                        </div>
+                    </div>
+                    
+                    <div id="modal3" class="modal">
+                        <div class="modal-content">
+                            <span class="close" onclick="cerrarModal('modal3')">&times;</span>
+                            <h3>Galeria de Bus</h3>
+                            <div class="imagenes-modal">
+                                <img src="img/bus.1.jpg" alt="">
+                                <img src="img/bus.2.jpg" alt="">
+                                <img src="img/bus.3.jpg" alt="">
+                                <img src="img/bus.4.jpg" alt="">
+                                <img src="img/bus.5.jpg" alt="">
+                                <img src="img/bus.6.jpg" alt="">
+                            </div>
+                            <span class="arrow arrow-left" onclick="cambiarImagen('modal3', -1)">&#8592;</span>
+                            <span class="arrow arrow-right" onclick="cambiarImagen('modal3', 1)">&#8592;</span>
+                        </div>
+                    </div>  
+                </main>                      
+                <section class="clientes contenedor" id="clientes">
+                    <h2 class="titulo">Nuestros Clientes</h2> 
+                    <div class="cards">
+                        <div class="card" style="background-color: #1a1470;">
+                            <img src="img/liceo.1.png" alt="">  
+                            <div class="contenido-textos-card">
+                                <h4>Liceo Mayor Andino</h4>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="card" style="background-color: #0fb433;">
+                            <img src="img/salle.1.png" alt="">
+                            <div class="contenido-textos-card">
+                                <h4>ETITC</h4>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="card" style="background-color: #b4a90f;">
+                            <img src="img/bauhaus.png" alt="">
+                            <div class="contenido-textos-card">
+                                <h4>Bauhaus</h4>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                    </section>
+                    <section class="administrador-flota" id="administrador-flota">
+                        <div class="contenedor">
+                            <h2 class="titulo">Administradorde flota VIZOR</h2>
+                            <div class="contenido-administrador">
+                                <p>Contamos con VIZOR es nuestro sistema de administración de flota de última generación que nos permite gestionar nuestros vehículos de manera eficiente, garantizando el óptimo rendimiento de cada unidad. Nuestro equipo de trabajo está altamente capacitado para operar este sistema, permitiendo así un monitoreo constante y control total sobre nuestras operaciones de transporte.</p>
+                                <img src="img/VIZOR.1.png" alt="Administrador de Flota" class="imagen-administrador">
+                            </div>
+                        </div>
+                    </section>
+                        </div>
+                    </div>
+                </section>
+                <section class="mis-vision-valores" id="Nosotros"> 
+                    <div class="mision">
+                        <h2 class="titulo">Sobre Nosotros</h2>
+                        <div class="servicio-cont">
+                            <div class="servicio-int">
+                                <div class="cuadro">
+                                    <h2>Vision</h2>
+                                    <p>Ser reconocidos como eje fundamental y estar entre las mejores empresas de transporte
+                                        publico automotor de servicio especial, por la calidad y el cumplimiento en la prestación
+                                        del servicio, con un sistema eficiente de mejoramiento continuo de los procesos, que
+                                        busca siempre la excelencia en la competitividad y rentabilidad, maximizar la cobertura y
+                                        gestionar los servicios con un modelo efectivo de alta tecnología y personal capacitado y
+                                        calificado, siempre dirigidos en alcanzar los más altos niveles de satisfacción para
+                                        nuestros clientes y asociados.</p>
+                                </div>
+                            </div>
+                            <div class="servicio-int">
+                                <div class="cuadro">
+                                    <h2>Mision</h2>
+                                    <p>Satisfacer las necesidades de movilización en vehículos de transporte terrestre público
+                                        especial de pasajeros en las modalidades empresarial, estudiantil, turistas y particulares,
+                                        con altos niveles de calidad, eficiencia, seguridad, Bioseguridad y con sentido de
+                                        pertenencia al servicio prestado, por medio de un equipo humano innovador, competente
+                                        y comprometido con la responsabilidad social y protegiendo el medio ambiente.</p>
+                                </div>
+                            </div>
+                            <div class="servicio-int">
+                                <div class="cuadro">
+                                    <h2>Valores</h2>
+                                    <p> • TRABAJO EN EQUIPO
+                                        • CALIDAD
+                                        • COMPROMISO Y LEALTAD
+                                        • ÉTICA
+                                        • IGUALDAD
+                                        • REPONSABILIDAD SOCIAL
+                                        • INNOVACIÓN
+                                        • SEGURIDAD
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>        
+            </main>
+            <footer id="contacto-footer">    
+                <div class="contenedor-footer">
+                    <div class="content-foo">
+                        <img src="img/phone.1.jpg" alt="phone logo" class="footer-icon">
+                        <h1>phone</h1>
+                        <p>3219892607</p>
+                        <p>3204290874</p>
+                        <p>3214820877</p>
+                    </div>
+                    <div class="content-foo">
+                        <img src="img/email.1.jpg" alt="email logo" class="footer-icon">
+                        <h1>email</h1>
+                        <p>Transportesathsas@gmail.com</p>
+                    </div>
+                    <div class="content-foo">
+                        <img src="img/location.1.jpg" alt="location logo" class="footer-icon">
+                        <h1>location</h1>
+                        <p>calle 10a #72a - 28</p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.7354583308374!2d-74.13837692598081!3d4.641209742172423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9c11d7936d55%3A0x7f013117faf43952!2zQ2wuIDEwYSAjIDcyQS0yOCwgS2VubmVkeSwgQm9nb3TDoSwgRC5DLiwgQm9nb3TDoSwgQm9nb3TDoSwgRC5DLg!5e0!3m2!1ses!2sco!4v1742569425706!5m2!1ses!2sco" id="mapa" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"> <width="600" height="450" style="border:0" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                <h2 class="titulo-final">&copy; Transportes ATH |  ATH</h2>
+            </footer>
+
+            <script>
+                function mostrarModal(modalId) {
+    var modal = document.getElementById(modalId);
+    modal.style.display = "block";
+}
+
+function cerrarModal(modalId) {
+    var modal = document.getElementById(modalId);
+    modal.style.display = "none";
+}
+
+// Cerrar el modal si se hace clic fuera de él
+window.onclick = function(event) {
+    var modals = document.getElementsByClassName("modal");
+    for (var i = 0; i < modals.length; i++) {
+        if (event.target == modals[i]) {
+            modals[i].style.display = "none";
+        }
+    }
+}
+
+
+            
+            </script>    
+        </body>
+        </html>    
